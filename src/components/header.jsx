@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Svg from "../assets/xivTech.svg"
-import Close from "../assets/close.svg"
 
 const header = () => {
     const [toggleServices, setToggleServices] = useState(false);
@@ -8,7 +7,7 @@ const header = () => {
 
     return (
         <>
-            <nav className="bg-white sticky top-0 z-10 shadow-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+            <nav className="bg-white sticky top-0 z-20 shadow-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                     <a href="#" className="z-30 flex h-12 w-12 self-end">
                         <img src={Svg} className='h-16 w-14 object-cover' alt="XivTech Logo" />

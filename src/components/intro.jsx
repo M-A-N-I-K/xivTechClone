@@ -3,7 +3,7 @@ import FramerMotionAnimation from "./framerMotionAnimation"
 const intro = () => {
     return (
         <FramerMotionAnimation>
-            <div className='flex justify-center items-center font-serif h-[70vh] w-[100vw]'>
+            <div className='flex justify-center items-center font-serif h-[90vh] w-[100vw]'>
                 <div className='flex flex-col w-[85vw] h-[40vh] justify-between'>
                     <p className='font-bold text-lg'>Bot, Process, Efficiency</p>
                     <h1 className='text-4xl lg:text-7xl py-4'>Robotic Process Automation that unifies people, process and technology</h1>
