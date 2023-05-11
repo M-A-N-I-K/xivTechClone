@@ -19,7 +19,10 @@ const header = () => {
                             </span>
                         </div>
                     </a>
-                    <button onClick={() => setToggleMenu(!toggleMenu)} data-collapse-toggle="mega-menu-full" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+                    <button onClick={() => {
+                        setToggleMenu(!toggleMenu),
+                            setToggleServices(false)
+                    }} data-collapse-toggle="mega-menu-full" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                     </button>
@@ -51,53 +54,64 @@ const header = () => {
                 </div>
                 {
                     toggleServices &&
-                    <div id="mega-menu-full-dropdown" className="absolute top-40 md:top-14 right-5 mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
+                    <div id="mega-menu-full-dropdown" className="w-full absolute top-40 md:top-14 right-5 mt-1 border-gray-200 shadow-sm bg-gray-50 px-4 lg:px-0 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
                         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white md:grid-cols-2 md:px-6">
                             <ul>
                                 <li>
                                     <a href="#" className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div className="font-semibold">Complete AI + RPA Automation</div>
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">Build deploy and scale bots</span>
+                                        <div className="font-semibold underline">Complete AI + RPA Automation</div>
                                     </a>
+                                    <div className='flex'>
+                                        <img src="https://www.xivtech.io./rp1.jpg" className='h-24 w-36 object-contain' alt="Bots image" />
+                                        <span className="self-center text-sm text-gray-500 dark:text-gray-400 pl-4">Build deploy and scale bots</span>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="#" className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div className="font-semibold">Simplify cloud ops - Apply the new rules of ops</div>
-                                        <div className='flex flex-col'>
-
-                                            <span className="text-sm text-gray-500 dark:text-gray-400">Kubernetes - Enterprise ready runtime</span>
+                                        <div className="font-semibold underline">Simplify cloud ops - Apply the new rules of ops</div>
+                                    </a>
+                                    <div className='flex'>
+                                        <img src="https://www.xivtech.io./cl2.jpg" className="h-24 w-36 object-contain" alt="Kubernetes Image" />
+                                        <div className='flex self-center pl-1 flex-col'>
+                                            <span className="text-sm pb-3 text-gray-500 dark:text-gray-400">Kubernetes - Enterprise ready runtime</span>
                                             <span className="text-sm text-gray-500 dark:text-gray-400">CCID</span>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
 
                             </ul>
                             <ul>
                                 <li>
                                     <a href="#" className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div className="font-semibold">Build better apps the cloud native way</div>
-                                        <div className='flex flex-col'>
+                                        <div className="font-semibold underline">Build better apps the cloud native way</div>
+                                    </a>
+                                    <div className='flex'>
+                                        <img src="https://www.xivtech.io./a2.jpg" className="h-24 w-36 object-contain" alt="Kubernetes Image" />
+                                        <div className='flex flex-col pl-1 self-center justify-between'>
 
-                                            <span className="text-sm text-gray-500 dark:text-gray-400">Build Apps - Deliver new apps users love
+                                            <span className="text-sm pb-3 text-gray-500 dark:text-gray-400">Build Apps - Deliver new apps users love
                                             </span>
                                             <span className="text-sm text-gray-500 dark:text-gray-400">
                                                 Modernize Apps - Rearchitect valuable legacy apps
                                             </span>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="#" className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                        <div className="font-semibold">Cloud Services</div>
-                                        <div className='flex flex-col'>
+                                        <div className="font-semibold underline">Cloud Services</div>
+                                    </a>
+                                    <div className="flex">
+                                        <img src="https://www.xivtech.io./a1.jpg" className="h-24 w-36 object-contain" alt="Kubernetes Image" />
+                                        <div className='flex flex-col self-center pl-1'>
 
-                                            <span className="text-sm text-gray-500 dark:text-gray-400">Azure
+                                            <span className="text-sm pb-3 text-gray-500 dark:text-gray-400">Azure
                                             </span>
                                             <span className="text-sm text-gray-500 dark:text-gray-400">
                                                 AWS
                                             </span>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
