@@ -10,7 +10,7 @@ const header = () => {
             <nav className="bg-white sticky top-0 z-20 shadow-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                     <a href="#" className="z-30 flex h-12 w-12 self-end">
-                        <img src={Svg} className='h-16 w-14 object-cover' alt="XivTech Logo" />
+                        <img src={Svg} className='w-10 h-10 lg:h-14 lg:w-14 object-contain' alt="XivTech Logo" />
                         <div className='flex flex-col'>
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">XivTech
                             </span>
