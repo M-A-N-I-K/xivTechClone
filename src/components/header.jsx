@@ -9,9 +9,15 @@ const header = () => {
         <>
             <nav className="bg-white sticky top-0 z-10 shadow-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-                    <a href="#" className="flex self-end">
-                        <img src={Svg} className='h-12 w-12 object-cover' alt="XivTech Logo" />
-                        <span className="self-center pb-4 text-2xl font-semibold whitespace-nowrap dark:text-white">XivTech</span>
+                    <a href="#" className="flex h-12 w-12 self-end">
+                        <img src={Svg} className='h-16 w-14 object-cover' alt="XivTech Logo" />
+                        <div className='flex flex-col'>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">XivTech
+                            </span>
+                            <span className='self-end font-bold text-[#e65100] text-[10px]'>
+                                RPA Experts
+                            </span>
+                        </div>
                     </a>
                     <button onClick={() => setToggleMenu(!toggleMenu)} data-collapse-toggle="mega-menu-full" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>

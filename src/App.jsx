@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Child from "./components/child"
+import Intro from "./components/intro"
 function App() {
   const content = [
     {
@@ -32,6 +33,7 @@ function App() {
   return (
     <>
       <Header />
+      <Intro />
       <div className="w-[100vw] flex justify-center items-center">
         <div className="w-[100vw] lg:w-[65vw] flex flex-col justify-between items-center lg:items-start">
           <h1 className='text-2xl text-start font-bold pb-0 lg:pb-10'>Lets Collaborate</h1>
